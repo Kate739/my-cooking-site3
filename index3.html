@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинария на дому</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: url('https://bogatyr.club/uploads/posts/2021-11/1636917856_1-bogatyr-club-p-fon-kulinariya-1.jpg') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            min-width: 250px;
+        }
+
+        #gallery .gallery-grid {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #gallery img {
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        #testimonials .testimonial {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 20px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Главный экран -->
+    <header>
+        <h1>Кулинария на дому</h1>
+        <p>Готовим вкусные блюда у вас дома или с доставкой!</p>
+        <a href="#services" class="btn">Наши услуги</a>
+    </header>
+
+    <!-- О нас -->
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем профессиональные кулинарные услуги на дому и доставку готовых блюд. Используем только свежие и качественные ингредиенты.</p>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="service-card">
+            <h3><a href="gotovka.html">Готовка на дому</a></h3>
+            <p>Приедем к вам домой и приготовим блюда прямо на вашей кухне.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="dostavka.html">Доставка готовых блюд</a></h3>
+            <p>Мы доставляем свежие и вкусные блюда прямо к вам на порог.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="indiv.html">Индивидуальные заказы</a></h3>
+            <p>Создаём меню под ваши предпочтения и праздники.</p>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery">
+        <h2>Галерея блюд</h2>
+        <div class="gallery-grid">
+            <img src="https://chb.caterme.ru/sites/default/files/landing_photo/Starfood_6.jpg" alt="Блюдо 1">
+            <img src="https://cdn.prod.website-files.com/60a35497ea15cf45782248b1/6554c19a5f514a3cf7a93729_61b3252dcb0bf741wx.webp" alt="Блюдо 2">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Блюдо 3">
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials">
+        <h2>Отзывы клиентов</h2>
+        <div class="testimonial">
+            <p>"Отличная еда и обслуживание! Очень довольны!"</p>
+            <p>- Иван Иванов</p>
+        </div>
+        <div class="testimonial">
+            <p>"Быстрая доставка и вкусные блюда!"</p>
+            <p>- Анна Смирнова</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Кулинария на дому. Все права защищены.</p>
+        <p><a href="gotovka.html">Готовка на дому</a> | <a href="dostavka.html">Доставка готовых блюд</a> | <a href="indiv.html">Индивидуальные заказы</a></p>
+    </footer>
+</body>
+</html>
